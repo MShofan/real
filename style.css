@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-brand h6 {
+  color: #fff;
+}
+/*========================================== banner*/
+.carousel-item img {
+  width: 100%;
+  height: 90vh;
+  filter: brightness(50%);
+}
+.carousel-item h1 {
+  border-top: 10px double yellow;
+  font-size: 150%;
+}
+.carousel-caption p {
+  font-size: 100%;
+  border-top: 10px double yellow;
+}
+/*========================================== Tentang kami*/
+.text-tentangkami {
+  width: 80%;
+  height: 20%;
+  margin: auto;
+  color: black;
+  margin-bottom: 10px;
+}
+.text-tentangkami p {
+  font-size: smaller;
+}
+
+.foto-tentangkami img {
+  width: 100%;
+  height: 50%;
+  padding: 2%;
+  margin: auto;
+  border-radius: 5%;
+  filter: brightness(100%);
+}
+/*========================================== Tipe*/
+.tipe img {
+  width: 250px;
+  height: 200px;
+  padding: 5%;
+  margin: 5px;
+}
+.spesifikasi {
+  width: 150px;
+  height: 200px;
+  padding: 5%;
+  margin: 5px;
+  font-size: 40%;
+}
+/*========================================== Tipe*/
+.Tiperumah .card {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 5);
+  width: 100%;
+  height: 300px;
+  background-color: rgb(38, 37, 63);
+  border-radius: 1rem;
+  padding: 0 2rem 0;
+  color: var(--white-color);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.card__img1,
+.card__img2,
+.card__img3 {
+  position: absolute;
+  width: 100%;
+  margin-top: 0.2rem;
+  filter: brightness(110%);
+}
+
+.card__data {
+  transform: translateY(13.2rem);
+  text-align: center;
+  color: rgb(246, 246, 250);
+}
+
+.card__title {
+  font-weight: bolder;
+  font-size: 100%;
+  color: rgb(246, 246, 250);
+  margin-bottom: -0.4rem;
+}
+
+.card__preci {
+  display: inline-block;
+  font-size: 60%;
+  font-weight: bold;
+  color: rgb(246, 246, 250);
+}
+.DP {
+  font-size: 60%;
+  color: salmon;
+  font-weight: bold;
+}
+.card__description {
+  transform: translateX(-0.4rem);
+  font-weight: smaller;
+  font-size: 70%;
+  text-align: initial;
+  opacity: 0;
+}
+
+.card__button {
+  display: block;
+  padding: 1rem 2rem;
+  background-color: salmon;
+  color: #fff;
+  border-radius: 25rem;
+  font-weight: 50%;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.card__button:hover {
+  box-shadow: 0 18px 40px -12px rgba(242, 162, 12, 0.35);
+}
+
+.card__img1,
+.card__img2,
+.card__data,
+.card__title,
+.card__preci,
+.card__description {
+  transition: 0.5s;
+}
+
+/* Hover card effect */
+
+.card:hover .card__img1 {
+  transform: translate(0, -15rem);
+}
+.card:hover .card__img2 {
+  transform: translate(0, -15rem);
+}
+
+.card:hover .card__data {
+  transform: translateY(0.1rem);
+}
+
+.card:hover .card__title {
+  transform: translateX(0.1rem);
+  margin-bottom: 0.2rem;
+}
+
+.card:hover .card__preci {
+  transform: translateX(-4rem);
+}
+
+.card:hover .card__description,
+.card:hover .card__button {
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+/*==============================================================vidio*/
+.vid video {
+  width: 100%;
+  height: fit-content;
+}
+/*==============================================================spesifikasi*/
+.text-spesifikasi p {
+  font-size: 10px;
+}
+.text-spesifikasi .spek {
+  font-weight: bold;
+}
+
+@media (min-width: 500px) {
+  .text-spesifikasi p {
+    font-size: 80%;
+  }
+}
+@media (min-width: 1500px) {
+  .text-spesifikasi p {
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .text-spesifikasi p {
+    font-size: 120%;
+    padding: 2%;
+  }
+  .text-spesifikasi h5 {
+    font-size: 200%;
+  }
+}
+
+.card-group .card {
+  margin-left: 10px;
+}
+
+.alamat p {
+  font-size: 12px;
+}
+
+.sosmed a {
+  margin: 5px;
+}
