@@ -88,19 +88,20 @@
 
 .card__title {
   font-weight: bolder;
-  font-size: 100%;
+  font-size: 150%;
   color: rgb(246, 246, 250);
   margin-bottom: -0.4rem;
+  padding-bottom: 0.2rem;
 }
 
 .card__preci {
   display: inline-block;
-  font-size: 60%;
+  font-size: 100%;
   font-weight: bold;
   color: rgb(246, 246, 250);
 }
 .DP {
-  font-size: 60%;
+  font-size: 75%;
   color: salmon;
   font-weight: bold;
 }
