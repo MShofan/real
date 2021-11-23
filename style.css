@@ -3,8 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-.navbar-brand h6 {
-  color: #fff;
+.navbar-brand img {
+  margin-left: 50%;
+  width: 80px;
+}
+.navbar-nav a {
+  font-size: larger;
+  font-weight: bold;
+}
+.navbar-nav a:hover {
+  font-size: larger;
+  font-weight: bold;
+  color: yellow;
 }
 /*========================================== banner*/
 .carousel-item img {
@@ -187,6 +197,9 @@
   .text-spesifikasi p {
     font-size: 100%;
   }
+  .carousel-item img {
+    width: 100%;
+  }
 }
 
 @media (min-width: 2000px) {
@@ -196,6 +209,9 @@
   }
   .text-spesifikasi h5 {
     font-size: 200%;
+  }
+  .carousel-item img {
+    width: 100%;
   }
 }
 
