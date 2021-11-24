@@ -20,41 +20,51 @@
   </head>
   <body>
     <!--============================================================================Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <nav class="navbar navbar-light bg-light fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
-          ><img src="./image/Logo Riskaka 2.png" alt=""
+          ><img src="./image/logo 2.1.png" alt=""
         /></a>
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation "
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="
-            collapse
-            navbar-collapse
-            justify-content-center
-            align-content-center
-            text-center
-          "
-          id="navbarNavAltMarkup"
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
         >
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link" href="#">Disabled</a>
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#Aboutus">About Us</a>
+              <a class="nav-link" href="#Infoproduk">Product</a>
+              <a class="nav-link" href="#Spesifikasi">Spesifikasi Bangunan</a>
+              <a class="nav-link" href="#Infolanjutan">Info Lanjutan</a>
+            </div>
           </div>
         </div>
-      </div>
+
     </nav>
+
+    <!-- ========================================================= off canvas-->
+
     <!--==================================================================================== Banner-->
     <div
       id="carouselExampleCaptions"
@@ -127,7 +137,7 @@
     </div>
 
     <!--============================================================================== About Us-->
-    <div class="container-fluid mb-5 mt-5">
+    <div class="container mb-5 mt-5" id="Aboutus">
       <div class="row">
         <div class="col-sm-6" data-aos="fade-up">
           <div class="foto-tentangkami">
@@ -136,7 +146,7 @@
               class="carousel slide carousel-fade"
               data-bs-ride="carousel"
             >
-              <div class="carousel-inner">
+              <div class="carousel-inner mb-4">
                 <div class="carousel-item active">
                   <img
                     src="./image/jakarta-garden-city-header1.jpg"
@@ -155,9 +165,9 @@
         </div>
         <div class="col-sm-6" data-aos="fade-up">
           <div class="text-tentangkami">
-            <h4 class="judul2 text-center mt-3">
+            <h3 class="judul2 text-center mt-3">
               <i class="bi bi-award-fill"></i> Cluster Arum Sari Cisande
-            </h4>
+            </h3>
             <p>
               Cluster arum sari cisande merupakan sebuah perumahan yang asri
               indah dan nyaman dengan lokasi yang strategis. Cluster ini
@@ -173,7 +183,7 @@
       </div>
     </div>
     <!--============================================================================info product-->
-    <div class="container-fluid pt-5 pb-5 bg-light" id="infoproduk">
+    <div class="container-fluid pt-5 pb-5 bg-light" id="Infoproduk">
       <div class="container Tiperumah text-center">
         <h1 class="pb-4">OUR PRODUCT</h1>
         <div class="row row-cols-1 row-cols-sm-3 row-cols-xxl-3">
@@ -255,7 +265,7 @@
     </div>
 
     <!--======================================================================== spesifikasi -->
-    <div class="container-fluid">
+    <div class="container mb-5 mt-5" id="Spesifikasi">
       <h1 class="text-center pb-5 pt-5">
         <i class="bi bi-boxes"></i> Spesifikasi Bangunan
       </h1>
@@ -293,8 +303,8 @@
       </div>
     </div>
     <!--======================================================================== Keuntungan -->
-    <div class="container-fluid mb-5 mt-5 bg-light">
-      <h1 class="text-center mb-3">
+    <div class="container mb-5 mt-5" id="Infolanjutan">
+      <h1 class="text-center mb-5 mt-5">
         <i class="bi bi-clipboard-check"></i> Keuntungan
       </h1>
       <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -348,9 +358,14 @@
       </div>
     </div>
     <!--======================================================================== Footer -->
-    <div class="container-fluid">
+    <div class="container-fluid bg-light">
       <h2 class="text-center mb-3">
-        <img src="./image/logo 2.1.png" width="150" alt="" />
+        <img
+          src="./image/Logo Riskaka 2.png"
+          style="width: 10%; height: 5%"
+          alt=""
+          class="mt-5"
+        />
       </h2>
       <div class="row footer">
         <div class="col alamat text-center sm">
@@ -373,15 +388,137 @@
         <p>Copyright Pt.Riska</p>
       </div>
     </div>
-    <div
-      class="d-grid fixed-bottom gap-2 d-md-flex justify-content-md-end mb-2"
-    >
-      <a href="https://wa.me/6281310442001"
-        ><button class="btn btn-primary float-end" type="button">
-          <i class="bi bi-whatsapp"></i></button
-      ></a>
-    </div>
 
+    <!-- Button trigger modal -->
+    <div class="d-sm-grid d-flex fixed-bottom justify-content-end">
+      <button
+        type="button"
+        class="btn btn-primary me-md-5 mb-lg-5"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        <span
+          class="spinner-grow spinner-grow-sm"
+          role="status"
+          aria-hidden="true"
+        ></span>
+        Hubungi Kami
+      </button>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h5 class="modal-title" id="exampleModalLabel">Form</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form name="submit-to-google-sheet">
+              <div class="alert my-alert alert-success d-none" role="alert">
+                <i class="bi bi-check-circle-fill"></i>
+                <strong> Trimakasih !</strong> Pesan Anda Sudah Terkirim.
+              </div>
+              <div class="mb-3">
+                <label for="validationCustom01" class="form-label">Nama</label>
+                <input
+                  name="nama"
+                  type="text"
+                  class="form-control"
+                  id="validationCustom01"
+                  placeholder=""
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="validationCustom02" class="form-label"
+                  >Pekerjaan</label
+                >
+                <input
+                  name="pekerjaan"
+                  type="text"
+                  class="form-control"
+                  id="validationCustom02"
+                  placeholder=""
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="validationCustom03" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  id="validationCustom03"
+                  placeholder=""
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="validationCustom04" class="form-label"
+                  >No Telfon</label
+                >
+                <input
+                  name="nomor"
+                  type="text"
+                  class="form-control"
+                  id="validationCustom04"
+                  placeholder=""
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Prihal</label
+                >
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  name="prihal"
+                >
+                  <option value="Lainnya">Lainnya</option>
+                  <option value="Tipe 50">Tipe 1</option>
+                  <option value="Tipe 40">Tipe 2</option>
+                </select>
+              </div>
+
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-kirim btn-primary">
+                  Kirim
+                </button>
+                <button
+                  class="btn btn-loading btn-primary d-none"
+                  type="button"
+                  disabled
+                >
+                  <span
+                    class="spinner-border spinner-border-sm"
+                    role="status"
+                    aria-hidden="true"
+                  ></span>
+                  Mengirim...
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--======================================================================== script -->
 
     <script
@@ -394,6 +531,32 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzLQbBATM3RST8bIcJQkPxod6FZb5qm05wAMQ2TWAJuWW-9GZOefo5xSjBvq_8KTs-d/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            console.log("Success!", response);
+            myAlert.classList.toggle("d-none");
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/aos.js"></script>
   </body>
