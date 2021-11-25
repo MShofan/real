@@ -246,6 +246,12 @@
   .foto-tentangkami img {
     height: 50%;
   }
+  .navbar-brand img {
+    margin-left: 50px;
+    width: 200px;
+    height: 150px;
+    margin-top: -30px;
+  }
 }
 
 .card-group .card {
