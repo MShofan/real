@@ -5,8 +5,8 @@
 }
 .navbar-brand img {
   margin-left: 10px;
-  width: 60px;
-  padding-top: 0;
+  width: 140px;
+  margin-top: -25px;
 }
 .navbar-nav a {
   font-size: medium;
@@ -22,8 +22,8 @@
 
 /*========================================== banner*/
 .carousel-item img {
-  height: 90vh;
-  filter: brightness(50%);
+  height: 100vh;
+  filter: brightness(100%);
 }
 .carousel-item h1 {
   border-top: 10px double yellow;
@@ -91,7 +91,7 @@
   position: absolute;
   width: 100%;
   margin-top: 0.2rem;
-  filter: brightness(110%);
+  filter: brightness(90%);
 }
 
 .card__data {
@@ -192,6 +192,13 @@
   font-weight: bold;
 }
 
+/*============================================================== Info Lanjutan*/
+.info:hover {
+  box-shadow: 0 0 15px rgb(44, 42, 42);
+}
+
+/*============================================================== Responsive */
+
 @media (min-width: 500px) {
   .text-spesifikasi p {
     font-size: 80%;
@@ -212,8 +219,9 @@
   }
   .navbar-brand img {
     margin-left: 50px;
-    width: 130px;
-    margin-top: 1px;
+    width: 200px;
+    height: 150px;
+    margin-top: -30px;
   }
   .navbar-nav a {
     font-size: larger;

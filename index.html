@@ -21,28 +21,40 @@
   <body>
     <!--============================================================================Navbar-->
 
-    <nav class="navbar navbar-light bg-light fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img src="./image/logo 2.1.png" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="container-fluid navs mt-0 fixed-top" style="height: 80px">
+      <nav>
+        <div class="row">
+          <div class="col-6">
+            <a class="navbar-brand" href="#"
+              ><img src="./image/logo 2.1.png" alt=""
+            /></a>
+          </div>
+          <div class="col-6">
+            <button
+              class="btn btn-primary float-end"
+              style="margin-top: 25px; margin-right: 10px"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling"
+              aria-controls="offcanvasScrolling"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
+        </div>
+
         <div
           class="offcanvas offcanvas-end"
+          data-bs-scroll="true"
+          data-bs-backdrop="false"
           tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
+          id="offcanvasScrolling"
+          aria-labelledby="offcanvasScrollingLabel"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+              Colored with scrolling
+            </h5>
             <button
               type="button"
               class="btn-close text-reset"
@@ -51,6 +63,9 @@
             ></button>
           </div>
           <div class="offcanvas-body">
+            <p>
+              Try scrolling the rest of the page to see this option in action.
+            </p>
             <div class="navbar-nav">
               <a class="nav-link" aria-current="page" href="#">Home</a>
               <a class="nav-link" href="#Aboutus">About Us</a>
@@ -60,10 +75,8 @@
             </div>
           </div>
         </div>
-
-    </nav>
-
-    <!-- ========================================================= off canvas-->
+      </nav>
+    </div>
 
     <!--==================================================================================== Banner-->
     <div
@@ -95,21 +108,30 @@
       </div>
       <div class="carousel-inner text-center">
         <div class="carousel-item active">
-          <img src="./image/taman.jpg" alt="..." />
+          <img
+            src="./image/WhatsApp Image 2021-11-16 at 18.34.12.jpeg"
+            alt="..."
+          />
           <div class="carousel-caption d-md-block">
             <h1>Arum Sari Cisande</h1>
             <p>Smart Living.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./image/jakarta-garden-city-header1.jpg" alt="..." />
+          <img
+            src="./image/WhatsApp Image 2021-11-16 at 18.34.12 (2).jpeg"
+            alt="..."
+          />
           <div class="carousel-caption d-md-block">
             <h1>Arum Sari Cisande</h1>
             <p>Some representative placeholder content for the second slide.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./image/shinano.jpg" alt="..." />
+          <img
+            src="./image/WhatsApp Image 2021-11-16 at 18.34.12 (1).jpeg"
+            alt="..."
+          />
           <div class="carousel-caption d-md-block">
             <h1>Arum Sari Cisande</h1>
             <p>Some representative placeholder content for the third slide.</p>
@@ -149,15 +171,21 @@
               <div class="carousel-inner mb-4">
                 <div class="carousel-item active">
                   <img
-                    src="./image/jakarta-garden-city-header1.jpg"
+                    src="./image/WhatsApp Image 2021-11-24 at 11.31.34 (1).jpeg"
                     alt="..."
                   />
                 </div>
                 <div class="carousel-item">
-                  <img src="./image/taman.jpg" alt="..." />
+                  <img
+                    src="./image/WhatsApp Image 2021-11-24 at 11.31.34.jpeg"
+                    alt="..."
+                  />
                 </div>
                 <div class="carousel-item">
-                  <img src="./image/shinano.jpg" alt="..." />
+                  <img src="./image/rumah2s.jpeg" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="./image/rumah1s.jpeg" alt="..." />
                 </div>
               </div>
             </div>
@@ -186,11 +214,11 @@
     <div class="container-fluid pt-5 pb-5 bg-light" id="Infoproduk">
       <div class="container Tiperumah text-center">
         <h1 class="pb-4">OUR PRODUCT</h1>
-        <div class="row row-cols-1 row-cols-sm-3 row-cols-xxl-3">
+        <div class="row row-cols-1 row-cols-sm-3 row-cols-xxl-2">
           <!-- tipe 1 -->
           <div class="col-sm">
             <div class="card mx-auto" data-aos="fade-up">
-              <img src="./image/rumah1s.jpg" alt="" class="card__img1" />
+              <img src="./image/rumah1s.jpeg" alt="" class="card__img1" />
               <div class="card__data">
                 <h1 class="card__title">Tipe 40/72</h1>
                 <span class="card__preci">Rp 340.000.000,-</span>
@@ -215,7 +243,7 @@
 
           <div class="col-sm">
             <div class="card mx-auto" data-aos="fade-down">
-              <img src="./image/rumah2s.jpg" alt="" class="card__img2" />
+              <img src="./image/rumah2s.jpeg" alt="" class="card__img2" />
               <div class="card__data">
                 <h1 class="card__title">Tipe 54/98</h1>
                 <span class="card__preci">Rp 480.000.000,-</span>
@@ -234,36 +262,10 @@
               </div>
             </div>
           </div>
-          <!-- </div> -->
-          <!-- tipe 3 -->
-
-          <div class="col-sm">
-            <div class="card mx-auto" data-aos="fade-up">
-              <img src="./image/rumah3s.jpg" alt="" class="card__img2" />
-              <!-- <div class="card__content">  -->
-              <div class="card__data">
-                <h1 class="card__title">Tipe 54/98</h1>
-                <span class="card__preci">Rp 480.000.000,-</span>
-                <h6 class="DP">DP 20% ( mulai: Rp 95.000.000,- )</h6>
-                <p class="card__description">
-                  Spesifikasi Bangunan Tipe 54/98 <br />
-                  -1 carport <br />
-                  -3 kamar tidur <br />
-                  -1 kamar mandi <br />
-                  -1 ruang tamu <br />
-                  -1 dapur
-                </p>
-                <a href="./assets/brosur acis RISKAKA.pdf" class="card__button"
-                  >Info Bangunan</a
-                >
-              </div>
-            </div>
-          </div>
-          <!-- </div> -->
         </div>
       </div>
     </div>
-
+    <!-- </div> -->
     <!--======================================================================== spesifikasi -->
     <div class="container mb-5 mt-5" id="Spesifikasi">
       <h1 class="text-center pb-5 pt-5">
@@ -309,7 +311,7 @@
       </h1>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col" data-aos="fade-up">
-          <div class="card h-100">
+          <div class="card info h-100">
             <img src="./image/map.PNG" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Lokasi Strategis</h5>
@@ -325,7 +327,7 @@
           </div>
         </div>
         <div class="col" data-aos="fade-down">
-          <div class="card h-100">
+          <div class="card info h-100">
             <img src="./image/side-plan.PNG" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Penataan Yang Rapih</h5>
@@ -340,8 +342,12 @@
           </div>
         </div>
         <div class="col" data-aos="fade-up">
-          <div class="card h-100">
-            <img src="./image/taman.jpg" class="card-img-top" alt="..." />
+          <div class="card info h-100">
+            <img
+              src="./image/109314779_181382266733641_1272404236171022643_n.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title">Lingkungan Indah</h5>
               <p class="card-text">
@@ -362,7 +368,7 @@
       <h2 class="text-center mb-3">
         <img
           src="./image/Logo Riskaka 2.png"
-          style="width: 10%; height: 5%"
+          style="width: 150px; height: 120px"
           alt=""
           class="mt-5"
         />
