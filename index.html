@@ -45,6 +45,7 @@
 
         <div
           class="offcanvas offcanvas-end"
+          style="width: 30%"
           data-bs-scroll="true"
           data-bs-backdrop="false"
           tabindex="-1"
@@ -53,7 +54,7 @@
         >
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
-              Colored with scrolling
+              Arumsari Cisande
             </h5>
             <button
               type="button"
@@ -63,15 +64,14 @@
             ></button>
           </div>
           <div class="offcanvas-body">
-            <p>
-              Try scrolling the rest of the page to see this option in action.
-            </p>
             <div class="navbar-nav">
               <a class="nav-link" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#Aboutus">About Us</a>
-              <a class="nav-link" href="#Infoproduk">Product</a>
-              <a class="nav-link" href="#Spesifikasi">Spesifikasi Bangunan</a>
-              <a class="nav-link" href="#Infolanjutan">Info Lanjutan</a>
+              <a class="nav-link" href="#OurProduct">Our Product</a>
+              <a class="nav-link" href="#SpesifikasiBangunan"
+                >Spesifikasi Bangunan</a
+              >
+              <a class="nav-link" href="#LangkahPemesanan">Langkah Pemesanan</a>
+              <a class="nav-link" href="#InformasiTerbaru">Informasi Terbaru</a>
             </div>
           </div>
         </div>
@@ -159,7 +159,7 @@
     </div>
 
     <!--============================================================================== About Us-->
-    <div class="container mb-5 mt-5" id="Aboutus">
+    <div class="container mb-5 mt-5" id="Home">
       <div class="row">
         <div class="col-sm-6" data-aos="fade-up">
           <div class="foto-tentangkami">
@@ -211,10 +211,10 @@
       </div>
     </div>
     <!--============================================================================info product-->
-    <div class="container-fluid pt-5 pb-5 bg-light" id="Infoproduk">
+    <div class="container-fluid pt-5 pb-5 bg-light" id="OurProduct">
       <div class="container Tiperumah text-center">
         <h1 class="pb-4">OUR PRODUCT</h1>
-        <div class="row row-cols-1 row-cols-sm-3 row-cols-xxl-2">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-xxl-2">
           <!-- tipe 1 -->
           <div class="col-sm">
             <div class="card mx-auto" data-aos="fade-up">
@@ -223,17 +223,15 @@
                 <h1 class="card__title">Tipe 40/72</h1>
                 <span class="card__preci">Rp 340.000.000,-</span>
                 <h6 class="DP">DP 20% ( mulai: Rp 67.000.000,- )</h6>
-                <p class="card__description">
-                  Spesifikasi Bangunan Tipe 40/72 <br />
-                  -1 carport <br />
-                  -2 kamar tidur <br />
-                  -1 kamar mandi <br />
-                  -1 ruang tamu <br />
-                  -1 dapur
-                </p>
-                <a href="./assets/brosur acis RISKAKA.pdf" class="card__button"
-                  >Info Bangunan</a
+                <p class="card__description"></p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal2"
                 >
+                  Info Lanjutan
+                </button>
               </div>
             </div>
           </div>
@@ -248,17 +246,16 @@
                 <h1 class="card__title">Tipe 54/98</h1>
                 <span class="card__preci">Rp 480.000.000,-</span>
                 <h6 class="DP">DP 20% ( mulai: Rp 95.000.000,- )</h6>
-                <p class="card__description">
-                  Spesifikasi Bangunan Tipe 54/98 <br />
-                  -1 carport <br />
-                  -3 kamar tidur <br />
-                  -1 kamar mandi <br />
-                  -1 ruang tamu <br />
-                  -1 dapur
-                </p>
-                <a href="./assets/brosur acis RISKAKA.pdf" class="card__button"
-                  >Info Bangunan</a
+                <p class="card__description"></p>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal1"
                 >
+                  Info Lanjutan
+                </button>
               </div>
             </div>
           </div>
@@ -266,8 +263,200 @@
       </div>
     </div>
     <!-- </div> -->
+    <!--======================================================================== modal tipe rumah 1-->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen-xl-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <img
+                    src="./image/WhatsApp Image 2021-11-16 at 18.34.12 (1).jpeg"
+                    alt=""
+                    style="width: 100%; border-radius: 5px"
+                  />
+                </div>
+                <div class="col-12 ms-auto text-center">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Magni reprehenderit eligendi ullam dolore nulla sint amet
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <video
+                    src="./image/House.mp4"
+                    loop
+                    autoplay
+                    muted
+                    style="width: 100%; filter: brightness(180%)"
+                  ></video>
+                </div>
+                <div class="col-6 ms-auto">
+                  <p style="font-size: small">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    <br />
+                    Quos, excepturi. <br />
+                    Quos, excepturi. <br />
+                    Quos, excepturi.
+                  </p>
+                </div>
+                <div class="col-6 ms-auto mt-2">
+                  <p style="font-size: small">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    <br />
+                    Quos, excepturi. <br />
+                    Quos, excepturi. <br />
+                    Quos, excepturi.
+                  </p>
+                </div>
+                <div class="col-6 ms-auto">
+                  <img src="./image/side-plan.PNG" alt="" style="width: 100%" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal3"
+            >
+              <span
+                class="spinner-grow spinner-grow-sm"
+                role="status"
+                aria-hidden="true"
+              ></span>
+              Hubungi Kami
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--======================================================================== modal tipe rumah 2-->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen-xl-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <img
+                    src="./image/WhatsApp Image 2021-11-16 at 18.34.12 (1).jpeg"
+                    alt=""
+                    style="width: 100%; border-radius: 5px"
+                  />
+                </div>
+                <div class="col-12 ms-auto text-center">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Magni reprehenderit eligendi ullam dolore nulla sint amet
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <video
+                    src="./image/House.mp4"
+                    loop
+                    autoplay
+                    muted
+                    style="width: 100%; filter: brightness(180%)"
+                  ></video>
+                </div>
+                <div class="col-6 ms-auto">
+                  <p style="font-size: small">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    <br />
+                    Quos, excepturi. <br />
+                    Quos, excepturi. <br />
+                    Quos, excepturi.
+                  </p>
+                </div>
+                <div class="col-6 ms-auto pt-5 text-end">
+                  <p style="font-size: small">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    <br />
+                    Quos, excepturi. <br />
+                    Quos, excepturi. <br />
+                    Quos, excepturi.
+                  </p>
+                </div>
+                <div class="col-6 ms-auto">
+                  <img src="./image/side-plan.PNG" alt="" style="width: 100%" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal3"
+            >
+              <span
+                class="spinner-grow spinner-grow-sm"
+                role="status"
+                aria-hidden="true"
+              ></span>
+              Hubungi Kami
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--======================================================================== spesifikasi -->
-    <div class="container mb-5 mt-5" id="Spesifikasi">
+    <div class="container mb-5 mt-5" id="SpesifikasiBangunan">
       <h1 class="text-center pb-5 pt-5">
         <i class="bi bi-boxes"></i> Spesifikasi Bangunan
       </h1>
@@ -304,10 +493,136 @@
         </div>
       </div>
     </div>
-    <!--======================================================================== Keuntungan -->
-    <div class="container mb-5 mt-5" id="Infolanjutan">
+    <!--======================================================================== S & K -->
+    <div
+      class="container-fluid pb-5 pt-3"
+      style="background-color: rgb(7, 7, 77)"
+    >
+      <div class="container mb-5 mt-5 bg-transparent" id="LangkahPemesanan">
+        <h1 class="text-center mb-5 mt-5" style="color: #fff">
+          <i class="bi bi-clipboard-check"></i> Langkah Pemesanan
+        </h1>
+        <div class="d-flex align-items-start">
+          <div
+            class="nav flex-column nav-pills me-3"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <button
+              class="nav-link active"
+              id="v-pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-home"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-home"
+              aria-selected="true"
+            >
+              1
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-profile"
+              aria-selected="false"
+            >
+              2
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-messages-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-messages"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-messages"
+              aria-selected="false"
+            >
+              3
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-settings-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-settings"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-settings"
+              aria-selected="false"
+            >
+              4
+            </button>
+          </div>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="v-pills-home"
+              role="tabpanel"
+              aria-labelledby="v-pills-home-tab"
+              style="color: #fff"
+            >
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Incidunt earum omnis maxime inventore quos nostrum quisquam
+                rerum cupiditate. Dolor harum ullam alias consequuntur nam
+                debitis officiis, officia assumenda explicabo eveniet!
+              </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-profile"
+              role="tabpanel"
+              aria-labelledby="v-pills-profile-tab"
+              style="color: #fff"
+            >
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Incidunt earum omnis maxime inventore quos nostrum quisquam
+              </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-messages"
+              role="tabpanel"
+              aria-labelledby="v-pills-messages-tab"
+              style="color: #fff"
+            >
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Incidunt earum omnis maxime inventore quos nostrum quisquam
+                rerum cupiditate. Dolor harum ullam alias consequuntur nam
+              </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-settings"
+              role="tabpanel"
+              aria-labelledby="v-pills-settings-tab"
+              style="color: #fff"
+            >
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Incidunt earum omnis maxime inventore quos nostrum quisquam
+                rerum cupiditate. Dolor harum ullam alias consequuntur nam
+                debitis officiis, officia assumenda explicabo eveniet! Lorem
+                ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+                earum omnis maxime inventore quos nostrum quisquam rerum
+                cupiditate. Dolor harum ullam alias consequuntur nam
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--======================================================================== Info -->
+    <div class="container mb-5 mt-5" id="InfoTerbaru">
       <h1 class="text-center mb-5 mt-5">
-        <i class="bi bi-clipboard-check"></i> Keuntungan
+        <i class="bi bi-info-square"></i> Informasi Terbaru
       </h1>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col" data-aos="fade-up">
@@ -401,7 +716,7 @@
         type="button"
         class="btn btn-primary me-md-5 mb-lg-5"
         data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
+        data-bs-target="#exampleModal3"
       >
         <span
           class="spinner-grow spinner-grow-sm"
@@ -414,7 +729,7 @@
     <!-- Modal -->
     <div
       class="modal fade"
-      id="exampleModal"
+      id="exampleModal3"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -525,6 +840,7 @@
         </div>
       </div>
     </div>
+
     <!--======================================================================== script -->
 
     <script
