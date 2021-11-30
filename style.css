@@ -10,8 +10,13 @@
 }
 .navbar-nav a {
   font-size: 100%;
-  color: rgb(7, 7, 77);
+  background-color: rgb(7, 7, 77);
   font-weight: bold;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+  border-radius: 10px;
 }
 .navbar {
   height: 8vh;

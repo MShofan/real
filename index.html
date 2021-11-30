@@ -45,17 +45,20 @@
 
         <div
           class="offcanvas offcanvas-end"
-          style="width: 30%"
+          style="width: 200px"
           data-bs-scroll="true"
           data-bs-backdrop="false"
           tabindex="-1"
           id="offcanvasScrolling"
           aria-labelledby="offcanvasScrollingLabel"
         >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+          <div
+            class="offcanvas-header"
+            style="border: 5px solid rgb(14, 14, 105)"
+          >
+            <h6 class="offcanvas-title" id="offcanvasScrollingLabel">
               Arumsari Cisande
-            </h5>
+            </h6>
             <button
               type="button"
               class="btn-close text-reset"
@@ -63,7 +66,10 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="offcanvas-body">
+          <div
+            class="offcanvas-body"
+            style="background-color: rgb(14, 14, 105)"
+          >
             <div class="navbar-nav">
               <a class="nav-link" aria-current="page" href="#">Home</a>
               <a class="nav-link" href="#OurProduct">Our Product</a>
@@ -502,118 +508,102 @@
         <h1 class="text-center mb-5 mt-5" style="color: #fff">
           <i class="bi bi-clipboard-check"></i> Langkah Pemesanan
         </h1>
-        <div class="d-flex align-items-start">
-          <div
-            class="nav flex-column nav-pills me-3"
-            id="v-pills-tab"
-            role="tablist"
-            aria-orientation="vertical"
-          >
-            <button
-              class="nav-link active"
-              id="v-pills-home-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-home"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-home"
-              aria-selected="true"
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Accordion Item #1
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
             >
-              1
-            </button>
-            <button
-              class="nav-link"
-              id="v-pills-profile-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-profile"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-profile"
-              aria-selected="false"
-            >
-              2
-            </button>
-            <button
-              class="nav-link"
-              id="v-pills-messages-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-messages"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-messages"
-              aria-selected="false"
-            >
-              3
-            </button>
-            <button
-              class="nav-link"
-              id="v-pills-settings-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-settings"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-settings"
-              aria-selected="false"
-            >
-              4
-            </button>
+              <div class="accordion-body text-center">
+                <strong>This is the first item's accordion body.</strong> <br />
+                It is shown by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
           </div>
-          <div class="tab-content" id="v-pills-tabContent">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Accordion Item #2
+              </button>
+            </h2>
             <div
-              class="tab-pane fade show active"
-              id="v-pills-home"
-              role="tabpanel"
-              aria-labelledby="v-pills-home-tab"
-              style="color: #fff"
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
             >
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Incidunt earum omnis maxime inventore quos nostrum quisquam
-                rerum cupiditate. Dolor harum ullam alias consequuntur nam
-                debitis officiis, officia assumenda explicabo eveniet!
-              </p>
+              <div class="accordion-body text-center">
+                <strong>This is the second item's accordion body.</strong>
+                <br />
+                It is hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
             </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Accordion Item #3
+              </button>
+            </h2>
             <div
-              class="tab-pane fade"
-              id="v-pills-profile"
-              role="tabpanel"
-              aria-labelledby="v-pills-profile-tab"
-              style="color: #fff"
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
             >
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Incidunt earum omnis maxime inventore quos nostrum quisquam
-              </p>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="v-pills-messages"
-              role="tabpanel"
-              aria-labelledby="v-pills-messages-tab"
-              style="color: #fff"
-            >
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Incidunt earum omnis maxime inventore quos nostrum quisquam
-                rerum cupiditate. Dolor harum ullam alias consequuntur nam
-              </p>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="v-pills-settings"
-              role="tabpanel"
-              aria-labelledby="v-pills-settings-tab"
-              style="color: #fff"
-            >
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Incidunt earum omnis maxime inventore quos nostrum quisquam
-                rerum cupiditate. Dolor harum ullam alias consequuntur nam
-                debitis officiis, officia assumenda explicabo eveniet! Lorem
-                ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
-                earum omnis maxime inventore quos nostrum quisquam rerum
-                cupiditate. Dolor harum ullam alias consequuntur nam
-              </p>
+              <div class="accordion-body text-center">
+                <strong>This is the third item's accordion body.</strong> <br />
+                It is hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
             </div>
           </div>
         </div>
@@ -714,7 +704,8 @@
     <div class="d-sm-grid d-flex fixed-bottom justify-content-end">
       <button
         type="button"
-        class="btn btn-primary me-md-5 mb-lg-5"
+        class="btn btn-primary"
+        style="margin-right: 10px; margin-bottom: 20px"
         data-bs-toggle="modal"
         data-bs-target="#exampleModal3"
       >
@@ -747,9 +738,40 @@
           </div>
           <div class="modal-body">
             <form name="submit-to-google-sheet">
-              <div class="alert my-alert alert-success d-none" role="alert">
+              <div
+                class="
+                  alert alert-dismissible alert-success
+                  fade
+                  show
+                  text-center
+                  d-none
+                "
+                role="alert"
+              >
                 <i class="bi bi-check-circle-fill"></i>
-                <strong> Trimakasih !</strong> Pesan Anda Sudah Terkirim.
+                <strong> Trimakasih !</strong> Data Anda Tersimpan. <br />
+                Tekan tombol HUBUNGKAN SEKARANG untuk terhubung melalui
+                WhatsApp<br />
+                <br />
+                <a
+                  href="https://wa.me/6281310442001"
+                  style="
+                    background-color: rgb(47, 120, 255);
+                    border-radius: 10px;
+                    padding: 10px;
+                    color: #fff;
+                    text-decoration: none;
+                  "
+                >
+                  Hubungkan Sekarang
+                </a>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="alert"
+                  aria-label="Close"
+                  form.reset();
+                ></button>
               </div>
               <div class="mb-3">
                 <label for="validationCustom01" class="form-label">Nama</label>
@@ -860,7 +882,8 @@
       const form = document.forms["submit-to-google-sheet"];
       const btnKirim = document.querySelector(".btn-kirim");
       const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".my-alert");
+      const myAlert = document.querySelector(".alert");
+      const mywa = document.querySelector(".mywa");
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
