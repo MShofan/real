@@ -54,9 +54,8 @@
         >
           <div
             class="offcanvas-header"
-            style="border: 5px solid rgb(14, 14, 105)"
           >
-            <h6 class="offcanvas-title" id="offcanvasScrollingLabel">
+            <h6 class="offcanvas-title" id="offcanvasScrollingLabel" style="font-weight: bold;">
               Arumsari Cisande
             </h6>
             <button
@@ -68,7 +67,7 @@
           </div>
           <div
             class="offcanvas-body"
-            style="background-color: rgb(14, 14, 105)"
+            style="background-color: rgb(7, 7, 77);"
           >
             <div class="navbar-nav">
               <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -155,10 +154,6 @@
     </div>
 
     <!--============================================================================== About Us-->
-    <div
-      class="line"
-      style="width: 10%; height: 5px; background-color: red; margin-top: 30px"
-    ></div>
     <div class="container mb-5 mt-5" id="Home">
       <div class="row">
         <div class="col-sm-6" data-aos="fade-up">
@@ -194,11 +189,11 @@
 
         <div
           class="col-sm-6"
-          style="border-right: 10px solid red"
+          style="border-right: 8px solid red"
           data-aos="fade-up"
         >
           <div class="text-tentangkami">
-            <h3 class="judul2 text-center mt-3">
+            <h3 class="judul2 text-center mt-0 mb-4">
               <i class="bi bi-award-fill"></i> Cluster Arum Sari Cisande
             </h3>
             <p>
@@ -266,10 +261,6 @@
         </div>
       </div>
     </div>
-    <div
-      class="line mt-0"
-      style="width: 10%; height: 5px; background-color: red; margin-top: 30px; float: right;"
-    ></div>
     <!-- </div> -->
     <!--======================================================================== modal tipe rumah 2-->
     <!-- Modal -->
@@ -308,18 +299,41 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-8 mt-5 ms-auto text-center">
+                <div class="col-12 mt-1 ms-auto text-center">
                   <img src="./image/denah2.JPG" alt="" style="width: 100%" />
                 </div>
-                <div class="col-4 mt-5  ms-auto ">
-                  <p style="font-size: large; font-weight: bold; padding-left: 10%;">
+                <div class="col-12 mt-2 text-center">
                     <h2><strong>Denah Tipe 60/98</strong></h2>
-                    1 Carpot <br>
-                    3 Kamar Tidur <br>
-                    1 Kamar Mandi <br>
-                    1 Ruang Tamu <br>
-                    1 Dapur <br>
-                  </p>
+                    <table class="table mt-2">
+                      <thead>
+                        <tr>
+                          <th scope="col">Jumlah</th>
+                          <th scope="col">Spesifikasi</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Carpot</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Kamar Tidur </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Kamar Mandi</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Ruang Tamu</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Dapur</td>
+                        </tr>
+                      </tbody>
+                    </table>
                 </div>
               </div>
             </div>
@@ -385,20 +399,41 @@
                 
               </div>
             </div>
-            <div class="row">
-              <div class="col-8 mt-5 ms-auto text-center">
-                <img src="./image/denah2.JPG" alt="" style="width: 100%" />
-              </div>
-              <div class="col-4 mt-5  ms-auto ">
-                <p style="font-size: large; font-weight: bold; padding-left: 10%;">
-                  <h2><strong>Denah Tipe 40/84</strong></h2>
-                  1 Carpot <br>
-                  2 Kamar Tidur <br>
-                  1 Kamar Mandi <br>
-                  1 Ruang Tamu <br>
-                  1 Dapur <br>
-                </p>
-              </div>
+            <div class="col-12 mt-1 ms-auto text-center">
+              <img src="./image/denah1.JPG" alt="" style="width: 100%" />
+            </div>
+            <div class="col-12 mt-1 text-center">
+                <h2><strong>Denah Tipe 40/84</strong></h2>
+                <table class="table mt-2">
+                  <thead>
+                    <tr>
+                      <th scope="col">Jumlah</th>
+                      <th scope="col">Spesifikasi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Carpot</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Kamar Tidur </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Kamar Mandi</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Ruang Tamu</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Dapur</td>
+                    </tr>
+                  </tbody>
+                </table>
             </div>
           </div>
         </div>
@@ -440,13 +475,14 @@
         </div>
         <div class="col-sm-6" data-aos="fade-up">
           <div class="text-spesifikasi">
-            <h5 class="text-center mb-3 mt-3">Spesifikasi Bangunan</h5>
-            <p>
+            <div class="row">
+            <p class="speks pt-5">
               Bahan dan perencanaan yang matang menjadikan
               <strong>Cluster Arum Sari Cisande</strong> sebuah Cluster yang
               berkualitas dalam segi ketahanan bangunan berikut merupakan
               beberapa fasilitas yang didapatkan.
             </p>
+            <div class="col-6">
             <p class="spek">
               <i class="bi bi-check-all"> Pondasi Strauspile</i><br />
               <i class="bi bi-check-all"> Double Dinding 4 Meter</i><br />
@@ -455,6 +491,10 @@
               <i class="bi bi-check-all"> Rangka Atap Baja Ringan</i><br />
               <i class="bi bi-check-all"> Plafon Gypsum(indor) GRC(outdor)</i
               ><br />
+              </p>
+            </div>
+            <div class="col-6">
+              <p class="spek">
               <i class="bi bi-check-all"> Keramik 60x60</i><br />
               <i class="bi bi-check-all"> Kamar Mandi Keramik 30x60 2M</i><br />
               <i class="bi bi-check-all"> Kloset Duduk</i><br />
@@ -462,9 +502,11 @@
               <i class="bi bi-check-all"> Listrik PLN 1300-2200 Wat</i><br />
             </p>
           </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
     <div
       class="line"
       style="
@@ -481,108 +523,49 @@
       style="width: 30%; height: 5px; background-color: red; margin-top: 30px;float: right"id="tentangkami"
     ></div>
     <div class="container-fluid pb-5 pt-3">
-      <div class="container bg-transparent text-center" >
-        <h1 class="text-center mb-5 mt-2" style="color: rgb(14, 14, 105)">
+      <div class="container bg-transparent" >
+        <h1 class="text-center mb-5 mt-2 " style="color: rgb(14, 14, 105)">
           Tentang Kami
         </h1>
-        <div class="row">
-          <div class="col-12 " style="border-left: 10px solid red">
-            <p data-aos="fade-right">
-              <strong>PT.RISKA</strong> <br> adalah Perushaan yang bergerak di
+        <div class="row text-center">
+          <div class="col-12 ">
+            <p data-aos="fade-right"  class="tentangkami">
+              <strong>PT.RISKA</strong> <br> <br> adalah Perushaan yang bergerak di
               beberapa bidang seperti GENERAL TRADE, PROPERTY DEVELOPER, GENERAL
               CONTRACTOR dan salah satunya adalah Desain Interior Contractor.
+            </p>
               <br />
-              <br />
-              <strong>PT.RISKA</strong> <br> adalah Perushaan yang Terpercaya dalam
+            <p data-aos="fade-right"  class="tentangkamik">
+              <strong>PT.RISKA</strong> <br> <br> adalah Perushaan yang Terpercaya dalam
               bidangnya, <strong>PT.RISKA</strong> memenuhi kebutuhan setiap
               klien mulai dari proses awal / perencanaan maupun Re-building /
-              Renovasi. Proyek yang telah kami kerjakan mulai dari
-              
-                >HOTEL, RUMAHSAKIT, OFFICE, RESIDETIAL, dan Bangunan pemerintah
-                maupun komersial lainnya.
+              Renovasi. Proyek yang telah kami kerjakan mulai dari HOTEL, RUMAHSAKIT, OFFICE, RESIDETIAL, dan Bangunan pemerintah
+              maupun komersial lainnya.
+            </p>
               <br />
-              <br />
-              <strong>PT.RISKA</strong> <br> Telah memiliki pengalaman kurang lebih
+            <p class="tentangkami" data-aos="fade-right">
+              <strong>PT.RISKA</strong> <br> <br> Telah memiliki pengalaman kurang lebih
               10 (sepuluh) tahun dibidangnya dan telah berhasil mewujudkan hasil
               kerja yang berkualitas tinggi dan terus berkomitmen memberikan
               peran yang terbaik.
               <br />
             </p>
           </div>
-          <div class="col-6">
-
-          </div>
-
-          <div class="accordion accordion-flush mt-5 mb-2" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseOne"
-                >
-                <strong>VISI</strong>
-                </button>
-              </h2>
-              <div
-                id="flush-collapseOne"
-                class="accordion-collapse collapse"
-                aria-labelledby="flush-headingOne"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">
-                  
-                  Menjadikan Perusahaan yang Sehat, Akuntable, dan Dinamis.
-                  <br />
-                </div>
-              </div>
+          <div class="row mt-5" data-aos="fade-up">
+            <div class="col-6">
+              <h4 style="border-bottom: 3px solid red;">VISI</h4>
+              <p class="visi mt-4">Menjadi  Perusahaan yang <strong>sehat</strong>,<strong>Akuntable</strong>,dan <strong>Dinamis</strong></p>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseTwo"
-                >
-                <strong>MISI</strong>
-                </button>
-              </h2>
-              <div
-                id="flush-collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="flush-headingTwo"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">
-                   
-                  Menjadi ajang berkreasi dan mengembangkan potensi bagi
-                  generasi muda.
-                  <br />
-                  Mewujudkan karya terbaik yang bermanfaat bagi sesama.
-                  <br />
-                  Selalu menjaga kepuasan kepada semua pelanggan. Menjadi <br />
-                  Perushaan tepat untuk investasi dan bisa berkelanjutan.
-                </div>
-              </div>
+            <div class="col-6">
+              <h4 style="border-bottom: 3px solid red;">MISI</h4>
+              <p class="misi mt-4">Menjadikan ajang berkreasi dan mengembangkan potensi bagi generasi muda. <br>
+              Mewujudkan karya - karya terbaik yang bermanfaat bagi sesama. <br>
+              Selalu menjaga kepuasan kepada semua pelanggan. <br>
+              Menjadi perusahaan yang tepat untuk investasi dan bisa berkelanjutan.</p>
             </div>
           </div>
         </div>
       </div>
-    <div
-      class="line"
-      style="
-        width: 30%;
-        height: 5px;
-        background-color: red;
-        margin-top: 30px;
-      "
-    ></div>
     <!--======================================================================== Info -->
     <div class="container mb-5 mt-5" id="InfoTerbaru">
       <h1 class="text-center mb-5 mt-5">
