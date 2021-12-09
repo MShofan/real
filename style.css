@@ -29,15 +29,13 @@
 /*========================================== banner*/
 .carousel-item img {
   height: 100vh;
-  filter: brightness(100%);
+  filter: brightness(70%);
 }
 .carousel-item h1 {
-  border-top: 10px double yellow;
-  font-size: 150%;
+  font-size: 300%;
 }
 .carousel-caption p {
   font-size: 100%;
-  border-top: 10px double yellow;
 }
 /*========================================== Tentang kami*/
 .text-tentangkami {
