@@ -74,7 +74,7 @@
   margin: 5px;
   font-size: 40%;
 }
-/*========================================== Tipe*/
+/*========================================== Portofolio*/
 .Tiperumah .card {
   box-shadow: 0 0 30px rgba(0, 0, 0, 5);
   width: 280px;
@@ -82,7 +82,6 @@
   background-color: rgb(38, 37, 63);
   border-radius: 1rem;
   padding: 0 2rem 0;
-  color: var(--white-color);
   overflow-y: hidden;
   overflow-x: hidden;
   align-items: center;
