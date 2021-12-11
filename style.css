@@ -8,7 +8,7 @@
   margin-top: 6px;
   height: 60px;
   background-color: #fff;
-  border-radius: 0px;
+  border-radius: 10px;
 }
 .navbar-nav a {
   font-size: 100%;
@@ -30,6 +30,7 @@
 
 /*========================================== banner*/
 .carousel-item img {
+  width: 800px;
   height: auto;
   filter: brightness(100%);
 }
