@@ -4,30 +4,34 @@
   box-sizing: border-box;
 }
 .navbar-brand img {
-  margin-left: 10px;
-  width: 140px;
-  margin-top: -25px;
+  width: 200px;
+  margin-top: 6px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 0px;
 }
 .navbar-nav a {
-  font-size: 80%;
+  font-size: 100%;
   font-weight: bold;
   padding: 10px;
-  color: #fff;
+  color: blue;
   margin: 5px;
   border-radius: 10px;
+  border-bottom: 2px solid blue;
+  text-align: center;
 }
 .navbar {
   height: 8vh;
 }
 .navs {
-  background-color: rgb(7, 7, 77);
-  height: 8vh;
+  background-color: #fff;
+  height: 20vh;
 }
 
 /*========================================== banner*/
 .carousel-item img {
-  height: 100vh;
-  filter: brightness(70%);
+  height: auto;
+  filter: brightness(100%);
 }
 .carousel-item h1 {
   font-size: 300%;
@@ -199,7 +203,7 @@
 /*============================================================== tentang kami*/
 .visi,
 .misi {
-  font-size: 7px;
+  font-size: 10px;
 }
 .tentangkami {
   font-size: 10px;
@@ -259,10 +263,7 @@
     height: 400px;
   }
   .navbar-brand img {
-    margin-left: 50px;
-    width: 200px;
-    height: 150px;
-    margin-top: -30px;
+    margin-left: 80px;
   }
   .text-tentangkami p {
     font-size: 100%;
@@ -276,13 +277,20 @@
   .misi,
   .tentangkami,
   .tentangkamik {
-    font-size: large;
+    font-size: 30px;
   }
   .text-spesifikasi .p {
     font-size: large;
   }
   .text-spesifikasi .spek {
     font-size: large;
+  }
+  .navbar-brand img {
+    width: 200px;
+    margin-top: 6px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 15px;
   }
 }
 @media (min-width: 2000px) {
@@ -298,12 +306,6 @@
   }
   .foto-tentangkami img {
     height: 50%;
-  }
-  .navbar-brand img {
-    margin-left: 50px;
-    width: 200px;
-    height: 150px;
-    margin-top: -30px;
   }
 }
 
