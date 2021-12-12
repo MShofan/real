@@ -301,19 +301,6 @@
     background-color: #fff;
     border-radius: 15px;
   }
-  .whatwedo1 {
-    width: 300px;
-    height: 200px;
-    background-color: red;
-    padding: 2px;
-    margin: 5px;
-    border-radius: 10px;
-    color: #fff;
-  }
-  .whatwedo1 h4 {
-    font-size: larger;
-    font-weight: bolder;
-  }
 }
 @media (min-width: 2000px) {
   .text-spesifikasi p {
