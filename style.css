@@ -365,9 +365,6 @@
   font-size: 100px;
   color: red;
 }
-.owl-theme .owl-nav [class*"owl-"]:hover {
-  background-color: cyan;
-}
 
 .anggota {
   background-size: contain;
@@ -375,7 +372,6 @@
   height: 300px;
   border-radius: 20px;
   margin: 2px;
-  box-shadow: 0 0 20px rgb(214, 55, 68);
 }
 
 #parallelogram {
