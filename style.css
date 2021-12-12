@@ -76,7 +76,7 @@
 }
 /*========================================== Portofolio*/
 .Tiperumah .card {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 5);
+  box-shadow: 5px 10px 20px rgba(42, 11, 219, 0.644);
   width: 280px;
   height: 150px;
   background-color: rgb(38, 37, 63);
@@ -147,7 +147,7 @@
 }
 
 .card__button:hover {
-  box-shadow: 0 18px 40px -12px rgba(242, 162, 12, 0.35);
+  box-shadow: 0 18px 40px -12px rgba(242, 12, 12, 0.507);
 }
 
 .card__img1,
@@ -209,13 +209,21 @@
 }
 .tentangkami {
   font-size: 10px;
-  border-left: 5px solid red;
+  border-left: 8px solid red;
   border-radius: 5px;
+  padding-left: 20px;
 }
 .tentangkamik {
   font-size: 10px;
-  border-right: 5px solid red;
+  border-right: 8px solid red;
   border-radius: 5px;
+  padding-right: 20px;
+}
+
+.visis:hover,
+.misis:hover {
+  box-shadow: 0 0 15px rgb(44, 42, 42);
+  transition: 0.5s;
 }
 
 /*============================================================== Info Lanjutan*/
@@ -233,7 +241,6 @@
     width: 100%;
   }
   .Tiperumah .card {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 5);
     width: 400px;
     height: 200px;
     background-color: rgb(38, 37, 63);
@@ -294,6 +301,19 @@
     background-color: #fff;
     border-radius: 15px;
   }
+  .whatwedo1 {
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    padding: 2px;
+    margin: 5px;
+    border-radius: 10px;
+    color: #fff;
+  }
+  .whatwedo1 h4 {
+    font-size: larger;
+    font-weight: bolder;
+  }
 }
 @media (min-width: 2000px) {
   .text-spesifikasi p {
@@ -321,4 +341,75 @@
 
 .sosmed a {
   margin: 5px;
+}
+
+.whatwedo1 {
+  width: 100px;
+  height: 110px;
+  background-color: red;
+  padding: 2px;
+  margin: 5px;
+  border-radius: 10px;
+  color: #fff;
+}
+.whatwedo1 h4 {
+  font-size: small;
+  font-weight: bolder;
+}
+.whatwedo1:hover {
+  transition: 0.5s;
+  box-shadow: 0 0 20px rgb(43, 22, 235);
+}
+
+/*========================================== carousel*/
+.owl-prev {
+  left: -30px;
+}
+.owl-next {
+  right: -30px;
+}
+.owl-next,
+.owl-prev {
+  position: absolute;
+  top: 10%;
+}
+.owl-prev span,
+.owl-next span {
+  font-size: 100px;
+  color: red;
+}
+.owl-theme .owl-nav [class*"owl-"]:hover {
+  background-color: cyan;
+}
+
+.anggota {
+  background-size: contain;
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 2px;
+  box-shadow: 0 0 20px rgb(214, 55, 68);
+}
+
+#parallelogram {
+  width: 4000px;
+  height: 60px;
+  background-color: red;
+  transform: skew(30deg);
+  margin-left: -40%;
+}
+#parallelogrammini {
+  width: 2%;
+  height: 60px;
+  margin-left: 20px;
+  background-color: red;
+  -webkit-transform: skew(30deg);
+  -moz-transform: skew(30deg);
+  transform: skew(30deg);
+}
+.imortal {
+  margin-top: -3rem;
+  color: #fff;
+  margin-bottom: 5rem;
+  position: absolute;
 }
