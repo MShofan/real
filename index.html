@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ridha Sembodo Karya</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -185,9 +185,10 @@
         </div>
 
         <div
-          class="col-sm-5"
+          class="col-sm-6"
           style="border-right: 8px solid red;"
-          data-aos="fade-up"data-aos-anchor-placement="center-bottom"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
         >
           <div class="text-tentangkami">
             <h3 class="judul2 text-center mt-0 mb-4">
@@ -260,7 +261,7 @@
               <br />
             </p> 
           </div>
-          <div class="row mt-5" data-aos="fade-up">
+          <div class="row mt-5 mx-auto" data-aos="fade-up">
             <div class="col-6 visis">
               <h2 style="border-bottom: 3px solid red;">VISION</h2>
               <p class="visi mt-4 text-center">Menjadi  Perusahaan yang <strong>sehat</strong>,<strong> Akuntable</strong>,dan <strong>Dinamis</strong></p>
@@ -280,8 +281,8 @@
       <div class="container mt-5 Strukturorganisasi" id="strukturorganisasi" >
       <div class="sorganisasi text-center mb-5 "  data-aos="zoom-in" data-aos-anchor-placement="center-bottom">
         <h2 class="text-start" style="color: #fff; border-bottom: 4px solid red;">ORGANIZATIONAL STRUCTURE <br> </h2>
-      <div class="imgarea mx-auto" id="area">
-        <img class="imgareas" src="./image/Struktur.png" alt="">
+      <div class="imgarea mx-auto">
+        <img src="./image/Struktur.png" alt="">
       </div>
       </div>
     </div>
@@ -345,7 +346,7 @@
                     </div>
                  </div>
 
-                 <div class="card anggota mx-auto" style="background-image: url(./image/Pak\ Santo.jpg);">
+                 <div class="card anggota mx-auto" style="background-image: url(./image/Maretwo.jpg);">
                   <div class="text-center" style="background-color:rgba(255, 255, 255, 0.788); margin-top:240px; border-radius: 20px; padding:5px; font-size: large;" >
                       <div class="nama" style="border-bottom: 2px solid red;">
                        <strong>MARETWO</strong>
@@ -546,7 +547,7 @@
           <!--========================================================================================================================================== Ongoing tipe 1 -->
           <div class="col-sm">
             <div class="card mx-auto" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-              <img src="./image/babelan.jpeg" alt="" class="card__img1" />
+              <img src="./image/Pasar.jpg" alt="" class="card__img1" />
               <div class="card__data">
                 <h1 class="card__title">Pasar Modern Sumber Riski</h1>
                 <span class="card__preci"><div class="line" style="width: 300px; height: 3px; background-color: red;"></div></span>
@@ -1332,26 +1333,6 @@
           }
         }
       });
-    </script>
-    <script>
-      const container = document.querySelector(".imgarea");
-      const img = document.querySelector(".imgareas");
-
-      container.addEventListener("mousemove", (e) => {
-        const x = e.clientX - e.target.offsetLeft;
-        const y = e.clientY - e.target.offsetTop;
-
-        console.log(x,y);
-
-        img.style.transformOrigin = "${x}px ${y}px";
-        img.style.transform = "scale(2)"; 
-      })
-
-      container.addEventListener("mouseleave", () => {
-        img.style.transformOrigin = "center";
-        img.style.transform = "scale(1)";
-      })
-
     </script>
   </body>
 </html>
