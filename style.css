@@ -9,6 +9,7 @@
   height: 60px;
   background-color: #fff;
   border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(219, 11, 11, 0.644);
 }
 .navbar-nav a {
   font-size: 100%;
@@ -33,6 +34,7 @@
 .navs {
   background-color: #fff;
   height: 20vh;
+  box-shadow: 0px 10px 10px rgba(219, 11, 11, 0.644);
 }
 
 /*========================================== banner*/
