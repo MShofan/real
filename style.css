@@ -449,8 +449,9 @@
 /* INFO TERBARU */
 
 #owl-demos .item {
-  height: 90vh;
+  height: 600px;
 }
-#owl-demos .item img {
-  height: auto;
+
+#owl-demos .item .card-text {
+  text-align: justify;
 }
