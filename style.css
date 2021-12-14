@@ -445,3 +445,12 @@
   justify-content: center;
   align-items: center;
 }
+
+/* INFO TERBARU */
+
+#owl-demos .item {
+  height: 90vh;
+}
+#owl-demos .item img {
+  height: auto;
+}
