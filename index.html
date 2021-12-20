@@ -15,82 +15,76 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    
 
     <!-- Owl-Carousel -->
     <link rel="stylesheet" href="./Vendor/owl-carousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./Vendor/owl-carousel/css/owl.theme.default.min.css">
 
+    <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
     <!--============================================================================Navbar-->
-
-    <div class="container-fluid navs mt-0 fixed-top" style="height: 20px">
-      <nav>
+  <nav>
+    <div class="container-fluid navs mt-0 fixed-top" style="height: 80px">
+      
         <div class="row">
           <div class="col-6">
             <a class="navbar-brand" href="#"
               ><img src="./image/Logo riska.png" alt=""
             /></a>
           </div>
-          <div class="col-6">
-            <button
-              class="btn btn-primary float-end"
-              style="margin-top: 25px; margin-right: 10px"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasScrolling"
-              aria-controls="offcanvasScrolling"
-            >
-              <i class="bi bi-list"></i>
-            </button>
+          <div class="col-5 text-end">
+            <div class="navbar">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Service</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Article</a>
+              <a class="nav-link" href="#">Project</a>
+            </div>
+            </div>
           </div>
         </div>
 
-        <div
-          class="offcanvas offcanvas-end"
-          style="width: 300px"
-          data-bs-scroll="true"
-          data-bs-backdrop="false"
-          tabindex="-1"
-          id="offcanvasScrolling"
-          aria-labelledby="offcanvasScrollingLabel"
-        >
-          <div
-            class="offcanvas-header"
-          >
-            <h6 class="offcanvas-title" id="offcanvasScrollingLabel" style="font-weight: bold;">
-              Arumsari Cisande
-            </h6>
-            <button
-              type="button"
-              class="btn-close text-reset"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#tentangkami">About Us</a>
-              <a class="nav-link" href="#strukturorganisasi">Organizational Structure</a>
-              <a class="nav-link" href="#ourteam">Our Team</a>
-              <a class="nav-link" href="#developerproject">Developer</a>
-              <a class="nav-link" href="#ongoingproject">Ongoing Project</a>
-              <a class="nav-link" href="#kontraktorproject">Contractor</a>
-              <a class="nav-link" href="#SpesifikasiBangunan"
-                >Gallery Company</a
-              >
+        <div class="navbot fixed-bottom">
+          <div class="container bg-primary text-center" style="width:100%; height:50px; border-radius: 10px; margin-bottom: -10px; color:#fff;">
+            <div class="row pb-3 pt-2 mx-auto">
               
-              <a class="nav-link" href="#InfoTerbaru">Latest News</a>
+              <div class="col navbot">
+                <div><a href=""><i class="fas fa-people-carry"></i></a>
+                </div>
+                <p style="font-size: 10px;">Service</p>
+              </div>
+             
+              <div class="col navbot">
+                <div><a href=""><i class="fas fa-address-card"></i></a>
+                </div>
+                <p style="font-size: 10px;">About</p>
+              </div>
+
+              <div class="col navbot">
+                <div><a href=""><i class="fas fa-home"></i></a>
+                </div>
+                <p style="font-size: 10px;">Home</p>
+              </div>
+
+              <div class="col navbot">
+                <div><a href=""><i class="fas fa-newspaper"></i></a>
+                </div>
+                <p style="font-size: 10px;">Article</p>
+              </div>
+
+              <div class="col navbot">
+                <div><a href=""><i class="fas fa-tasks"></i></a>
+                </div>
+                <p style="font-size: 10px;">Project</p>
+              </div>
+
             </div>
           </div>
         </div>
       </nav>
-    </div>
 
     <!--==================================================================================== Banner-->
     <div
@@ -120,15 +114,15 @@
           aria-label="Slide 3"
         ></button>
       </div>
-      <div class="carousel-inner text-center">
+      <div class="carousel-inner" style="padding-top: 60px;" >
         <div class="carousel-item active">
-          <img src="./image/Banner 1_1.jpg" alt="..." />
+          <img src="./image/Rumah 1.png" alt="..." />
         </div>
         <div class="carousel-item">
-          <img src="./image/Banner 2.jpg" alt="..." />
+          <img src="./image/Rumah 1.png" alt="..." />        
         </div>
         <div class="carousel-item">
-          <img src="./image/Banner 3.jpg" alt="..." />
+          <img src="./image/Rumah 1.png" alt="..." />
       </div>
       <button
         class="carousel-control-prev"
@@ -149,6 +143,18 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <div class="infobanner">
+           <p class="infobannerp">SELAMAT DATANG DI WEBSITE KAMI....</p>
+           <h4 class="infobannerh4">PT. RIDHA SEMBODO KARYA</h4>
+           <p class="infobannerisi">
+            Sebelum Perusahaan <strong>PT.Ridha Sembodo Karya (RISKA)</strong> terlebih dahulu ditahun 2011 dikenal dengan nama <strong>CV. RISTAKA (Ridha Liesita Karya).</strong> 
+            Selanjutnya dikarenakan kami sudah mempunyai pengalaman dan konsisten dalam bidang usaha yang kami jalankan, maka pada tahun 2013 kami bertransformasi
+            menjadi sebuah perusahaan yang bernama <strong>PT.Ridha Sembodo Karya</strong>  atau nama sederhanannya <strong>PT.RISKA</strong>.
+          </p>
+          <a class="btn btn-primary" id="compro" href="./image/Compro_Riska_FIxed.pdf" role="button"
+          >Download Companny Profile</a
+        >
+          </div>
 
     <!--============================================================================== About Us-->
     <div class="container mb-5 mt-5" id="Home">
@@ -177,7 +183,7 @@
                   <img src="./image/none.jpeg" alt="..." />
                 </div>
                 <div class="carousel-item">
-                  <img src="./image/Subangplaza.jpeg" alt="..." />
+                  <img src="./image/Subangplaza.jpeg" alt="..." />             
                 </div>
               </div>
             </div>
@@ -1322,7 +1328,6 @@
 
     <script>
       $('#anggota').owlCarousel({
-        
         autoplay: true,
         autoplayHoverPause:true,
         margin:5,
@@ -1350,9 +1355,8 @@
       });
     </script>
     <script>
-    $("#owl-demos").owlCarousel({
-      
-      autoplay: true,
+    $("#owl-demos").owlCarousel({   
+        autoplay: true,
         autoplayHoverPause:true,
         margin:5,
         nav:false,
@@ -1378,5 +1382,5 @@
         }
     });
 </script>
-  </body>
+</body>
 </html>
