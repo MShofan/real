@@ -270,18 +270,19 @@
     display: flex;
   }
   .navbar a {
+    text-align: center;
     color: black;
     font-weight: 700;
     padding: 10px;
     margin-top: 10px;
     transition: 0.5s;
     font-size: small;
+    width: 110px;
   }
   .navbar a:hover {
     border-radius: 5px;
-    color: black;
-    border-bottom: 4px solid red;
-    background-color: rgba(255, 0, 0, 0.246);
+    color: #fff;
+    background-color: #c82121;
   }
   .navbot {
     display: none;
@@ -340,7 +341,7 @@
     color: #c82121;
     margin-bottom: 0px;
     font-weight: 900;
-    font-size: 10px;
+    font-size: 20px;
   }
   .infobannerh4 {
     color: #c82121;
@@ -395,6 +396,14 @@
   }
 }
 @media (min-width: 1500px) {
+  .navbar a {
+    color: black;
+    font-weight: 700;
+    padding: 10px;
+    margin-top: 10px;
+    transition: 0.5s;
+    font-size: large;
+  }
   .text-spesifikasi p {
     font-size: 120%;
     padding: 2%;
@@ -417,7 +426,7 @@
     color: #c82121;
     margin-bottom: 0px;
     font-weight: 900;
-    font-size: 15px;
+    font-size: 20px;
   }
   .infobannerh4 {
     color: #c82121;
