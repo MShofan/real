@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.kontak {
+  visibility: hidden;
+}
+.navbar-brand img {
+  width: 100%;
+  margin-top: 6px;
+  height: 60px;
+}
+.navbar {
+  display: none;
+}
+.navs {
+  background-color: #fff;
+  height: 20vh;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.644);
+}
+.navbot a {
+  color: #fff;
+}
+
+/*========================================== isi*/
+.news h2 {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  border-bottom: 5px solid red;
+  padding-bottom: 10px;
+  text-align: start;
+}
+.newss {
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.5);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 80%;
+  height: 80%;
+  padding: 20pxs;
+  border-radius: 20px;
+}
+.news .tgl,
+.news .usr {
+  font-weight: 500;
+}
+.news p {
+  margin-top: 20px;
+  text-align: justify;
+}
+/*========================================== Tentang kami*/
+.isikontent {
+  width: 90%;
+  margin-top: 40px;
+}
+/*========================================== Tipe*/
+.owl-item.active {
+}
+.owl-item.active.center {
+}
+/*========================================== Portofolio*/
+
+/*==========================================vidio*/
+
+/*==============================================================spesifikasi*/
+
+/*============================================================== tentang kami*/
+
+/*============================================================== Info Lanjutan*/
+
+/*============================================================== Responsive */
+
+@media (min-width: 500px) {
+  .kontak {
+    visibility: visible;
+  }
+  .navbar {
+    height: 8vh;
+    display: flex;
+  }
+  .navbar a {
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    padding: 3px;
+    margin-top: 20px;
+    transition: 0.5s;
+    font-size: small;
+    width: 50px;
+  }
+
+  .navbar a:hover {
+    border-radius: 5px;
+    color: #fff;
+    background-color: #c82121;
+  }
+  .navbot {
+    display: none;
+  }
+  .navbar-brand img {
+    width: 90%;
+    margin-top: 6px;
+    height: 70px;
+  }
+}
+@media (min-width: 1000px) {
+  .navbar-brand img {
+    width: 50%;
+    margin-top: 6px;
+    height: 70px;
+  }
+}
+@media (min-width: 1500px) {
+  .navbar a {
+    color: black;
+    font-weight: 900;
+    padding: 10px;
+    margin-top: 10px;
+    transition: 0.5s;
+    font-size: larger;
+    width: 110px;
+  }
+}
+
+/*========================================== carousel*/
