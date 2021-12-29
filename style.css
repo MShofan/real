@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+.kontak {
+  visibility: hidden;
+}
 .navbar-brand img {
   width: 100%;
   margin-top: 6px;
@@ -265,6 +271,9 @@
 /*============================================================== Responsive */
 
 @media (min-width: 500px) {
+  .kontak {
+    visibility: visible;
+  }
   .navbar {
     height: 8vh;
     display: flex;
@@ -272,13 +281,14 @@
   .navbar a {
     text-align: center;
     color: black;
-    font-weight: 700;
-    padding: 10px;
-    margin-top: 10px;
+    font-weight: 500;
+    padding: 3px;
+    margin-top: 20px;
     transition: 0.5s;
     font-size: small;
-    width: 110px;
+    width: 50px;
   }
+
   .navbar a:hover {
     border-radius: 5px;
     color: #fff;
@@ -398,11 +408,12 @@
 @media (min-width: 1500px) {
   .navbar a {
     color: black;
-    font-weight: 700;
+    font-weight: 900;
     padding: 10px;
     margin-top: 10px;
     transition: 0.5s;
-    font-size: large;
+    font-size: larger;
+    width: 110px;
   }
   .text-spesifikasi p {
     font-size: 120%;
